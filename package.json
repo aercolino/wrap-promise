@@ -1,0 +1,38 @@
+{
+  "name": "wrap-promise",
+  "version": "0.1.0",
+  "description": "Wrap a promise within before and after callbacks.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aercolino/wrap-promise.git"
+  },
+  "engines": {
+    "node": ">=6.10.3"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc mocha tests/**/*.test.js",
+    "coveralls": "npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "nodejs",
+    "wrap",
+    "promise",
+    "before",
+    "after"
+  ],
+  "author": "Andrea Ercolino <andowebsit.es@gmail.com> (http://andowebsit.es)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "nyc": "^11.2.1",
+    "sinon": "^3.2.1",
+    "sinon-chai": "^2.13.0",
+    "sinon-test": "^2.1.0"
+  },
+  "dependencies": {}
+}
