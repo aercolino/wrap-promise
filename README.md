@@ -9,16 +9,17 @@ Wrap a promise within before and after callbacks.
 ## Installation
 
 ```bash
-$ npm install wrap-promise
+$ npm install @aercolino/wrap-promise
 ```
 
+This is not related to [wrap-promise](https://github.com/shinnn/wrap-promise).
 
 
 
 ## Usage
 
 ```js
-const { $wrapPromise } = require('wrap-promise');
+const { $wrapPromise } = require('@aercolino/wrap-promise');
 
 const regular = $wrapPromise($promise, before, after);
 
@@ -51,7 +52,7 @@ const special = $wrapPromise($promise, before, afterFulfillment, afterRejection)
 ```js
 // test.js
 require('console.mute');
-const { $wrapPromise } = require('wrap-promise');
+const { $wrapPromise } = require('@aercolino/wrap-promise');
 
 function muted($fn, ...args) {
     return $wrapPromise(
