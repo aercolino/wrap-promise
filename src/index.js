@@ -14,12 +14,15 @@ module.exports = {
 
         before();
         return getPromise(p)
-            .then(afterResolve)
+            .then((value) => {
+                afterResolve({ value });
+                return value;
+            })
             .catch((reason) => {
                 if (typeof afterReject === 'function') {
-                    return afterReject(reason);
+                    return afterReject({ reason });
                 }
-                afterResolve(reason);
+                afterResolve({ reason });
                 throw reason;
             });
     },
