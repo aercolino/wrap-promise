@@ -1,4 +1,4 @@
-# Wrap Promise `[![Build Status](https://travis-ci.org/aercolino/wrap-promise.svg?branch=master)](https://travis-ci.org/aercolino/wrap-promise) [![Coverage Status](https://coveralls.io/repos/github/aercolino/wrap-promise/badge.svg?branch=master)](https://coveralls.io/github/aercolino/wrap-promise?branch=master)`
+# Wrap Promise [![Build Status](https://travis-ci.org/aercolino/wrap-promise.svg?branch=master)](https://travis-ci.org/aercolino/wrap-promise) [![Coverage Status](https://coveralls.io/repos/github/aercolino/wrap-promise/badge.svg?branch=master)](https://coveralls.io/github/aercolino/wrap-promise?branch=master)
 
 
 Wrap a promise within before and after callbacks.
