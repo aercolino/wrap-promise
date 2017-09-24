@@ -15,7 +15,7 @@
     "coveralls": "npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
-    "nodejs",
+    "test",
     "wrap",
     "promise",
     "before",
